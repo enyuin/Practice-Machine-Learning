@@ -1,0 +1,36 @@
+---
+title: "Pratical Machine Learning"
+author: "Wong Jun Xuan"
+date: "February 24, 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Weight Lifting Exercise Manner Prediction
+
+## Synopsis
+
+##### The goal of this research is to analyze how well a human lift up a weight in 5 different classes.
+
+ * Class A : Exactly according to the specification
+ * Class B : Throwing the elbow to the front
+ * Class C : Lifting the dumbell only halfway
+ * Class D : Lowering the dumbell only halfway
+ * Class E : Throwing the hips to the front
+
+##### This analysis is carried out by a group of enthusiasts whose possibly "tech geeks" that wanted to know how well they do lifting exercise by recording data from accelerometers on the belt, forearm, arm and dumbell. They are keen to find out how well they did the exercise since people rarely quantify how well they do it.
+
+## Prepare the Environment
+
+##### Firstly, load all the libraries that going to be used and setting seed for reproducibility.
+```{r}
+library(caret)
+library(rpart)
+library(randomForest)
+set.seed(1994)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
